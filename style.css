@@ -1,0 +1,1043 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+
+    background-color: #0e0e0e;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    width: 100%;
+
+}
+
+.view-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.view-1 img {
+    width: 80%;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.view-1 h1 {
+    font-size: 3.4rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.view-1 p {
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin: 0.9rem 0;
+    opacity: 0.6;
+
+
+}
+
+.view-1 p br {
+    display: none;
+}
+
+h1,
+p {
+    color: wheat;
+}
+
+.view-2 {
+
+    width: 100%;
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.marquee {
+    display: flex;
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee::after {
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(to right, #0e0e0e, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.marquee::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(to left, #0e0e0e, transparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+.text {
+    display: flex;
+    gap: 3rem;
+    padding: 0 1.5rem;
+    animation: marquee 10s linear infinite both;
+}
+
+.text p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+.down {
+    text-align: center;
+}
+
+.image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.image1 i {
+    font-size: 2rem;
+    color: #ffff;
+    border: 1px solid #2e2d2c;
+    border-radius: 50%;
+    padding: 4px;
+    opacity: 0.7;
+
+}
+
+.image1 p {
+    font-size: 0.9rem;
+    color: #dac5ad;
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.view-3 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.2rem;
+
+}
+
+.box {
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+    padding: 1rem 1.8rem;
+    color: #dac5ad;
+
+}
+
+.box h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #dac5ad;
+    text-transform: uppercase;
+
+}
+
+.box p {
+    color: #dac5ad;
+    font-size: 1rem;
+    margin-top: 1.1rem;
+    opacity: 0.6;
+}
+
+.box-arrow {
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+
+}
+
+.box-arrow i {
+    color: #ffff;
+    border: 1px solid #2e2d2c;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.view-4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.view-4 h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.see-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1.1rem;
+}
+
+.see-all i {
+    color: #ffff;
+    border: 1px solid #2e2d2c;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.see-all p {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.photo-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+.image-1 {
+    width: 100%;
+    position: relative;
+
+}
+
+.image-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.photo-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.section1 {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.8rem;
+    position: absolute;
+    bottom: 5%;
+    border: 1px solid#2e2d2c;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    margin: 0 1rem;
+
+
+}
+
+.section1 p {
+    font-size: 1.5rem;
+
+}
+
+.section1 h1 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    gap: 2rem;
+}
+
+.view-5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+.view-5 .the h1 {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.view-5 .step h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.view-5 p {
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.view-5 p br {
+    display: none;
+
+}
+
+.complex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.leftpart {
+    display: flex;
+
+    flex-direction: column;
+    width: 20%;
+
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.leftpart .circle {
+    width: 1%;
+    padding: 1.5rem;
+    height: 1vh;
+    margin-left: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+    border-radius: 50%;
+    color: #dac5ad;
+
+
+}
+
+.leftpart .line1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.7rem;
+
+    width: 3%;
+    height: 8vh;
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+
+}
+
+.leftpart .line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.7rem;
+
+    width: 3%;
+    height: 80vh;
+
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+}
+
+.left1part {
+    display: none;
+
+}
+
+.left1part .box1 {
+    display: flex;
+    /* align-items: flex-start;  */
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+    height: 70vh;
+    width: 90%;
+    margin-top: 10vh;
+    gap: 0.5rem;
+}
+
+.rightpart {
+
+    width: 90vw;
+
+    display: flex;
+    align-items: center;
+
+
+    margin-top: 10vh;
+
+    flex-direction: column;
+}
+
+.rightpart .box1 {
+    display: flex;
+    /* align-items: flex-start;  */
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+    height: 70vh;
+    width: 90%;
+    margin-top: 10vh;
+    gap: 0.5rem;
+
+
+
+}
+
+.smallbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #2e2d2c;
+    height: 7%;
+    width: 30%;
+}
+
+.smallbox p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.box1 h1 {
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+.point1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.point1 i {
+    font-size: 7px;
+}
+
+.point1 p {
+    margin-left: 0.9rem;
+    font-size: 1rem;
+}
+.view-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:11vh;
+}
+.view-6 h1{
+    font-size:3.1rem;
+    font-weight: 100;
+
+}
+.view-6 p{
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.view-6 br{
+    display: none;
+}
+.view-7{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+
+}
+.view-7 .left1{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.view-7 .box2{
+    
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+    width:90vw;
+    height:65vh;
+    padding: 1.1rem;
+    margin: 1.3rem;
+    line-height: 2rem;
+    
+    
+}
+.view-7 .text1{
+    margin-top: 1rem;
+    
+}
+.view-7 img{
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    width:20%;
+
+}
+.view-7 .imagepart{
+    display: flex;
+    margin-top: 4vh;
+    align-items: center;
+    gap:2rem;
+}
+.textpart{
+    display: flex;
+    flex-direction: column;
+   
+}
+.imagepart .textpart h1{
+    font-size: 0.9rem;
+   
+}
+.imagepart .textpart p{
+    font-size: 0.8rem;
+    
+}
+.view-8{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+
+}
+.ok{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.view-8 p{
+    font-size:2rem;
+}
+.text8{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vw;
+    font-weight: 200;
+}
+
+
+
+.text8img{
+   width: 60%;
+}
+
+
+
+.text8img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.heading1 {
+    margin-top: 3vh;
+    
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height as needed */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.heading1 p {
+    font-size: 2rem;
+    text-align: center;
+   
+}
+
+
+.para1 p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.para1{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 1.5rem 3rem;
+}
+.paraimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Ensure this is set to row (default value) */
+    width:20%;
+    margin-top: 4vh;
+}
+
+.paraimg img {
+    border-radius: 50%;
+    border: 1px solid #2e2d2c;
+    background-color: #181716;
+    margin: 1rem 10px; /* Add margin for spacing between images */
+    padding: 0.6rem; /* Ensure images don't overflow */
+    height: auto;/* Maintain aspect ratio */
+}
+.view-9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.anime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 9vh;
+    border: 1px solid #2e2d2c;
+    background-color: #22201f;
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Required for positioning */
+}
+
+.marquee-wrapper {
+    display: flex;
+    gap: 0; /* Remove gap between elements */
+    animation: marquee 8s linear infinite; /* Apply animation */
+}
+
+.marquee-wrapper p {
+    white-space: nowrap; /* Prevent text from wrapping */
+    margin: 0; /* Remove default margin */
+    padding: 0 1.1rem; /* Add padding instead of gap */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0); /* Start from the initial position */
+    }
+    100% {
+        transform: translateX(-50%); /* Move to the left by 50% of the wrapper's width */
+    }
+}
+
+
+
+@media(min-width: 1020px) {
+
+    /* 100vw = 1300px, 10vw = 130px, 1vw = 13px */
+    html {
+        font-size: clamp(16px, 1vw, 20px);
+        /* Font size adjusts between 16px and 20px based on viewport width */
+    }
+
+    .view-1 img {
+        width: 28%;
+    }
+
+    .view-1 h1 {
+        font-size: 8.5rem;
+    }
+
+    .view-1 p {
+        font-size: 1.5rem;
+    }
+
+    .view-1 p br {
+        display: block;
+    }
+
+    .marquee {
+        width: 50%;
+    }
+
+    .view-3 {
+
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 100%;
+
+    }
+
+    .box {
+        width: 40%;
+        padding: 3rem 2rem;
+
+
+    }
+
+    .box p {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .box h1 {
+        font-size: 1.8rem;
+    }
+
+    .view-4 {
+        margin-top: 3rem;
+    }
+
+    .word {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60rem;
+    }
+
+    .word h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        gap: 2rem;
+
+
+    }
+
+    .image-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .view-5 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 7rem;
+    }
+
+    .view-5 .the {
+        text-align: center;
+    }
+
+    .view-5 .step h1 {
+        font-size: 5.5rem;
+    }
+
+    .view-5 p br {
+        display: block;
+    }
+
+    .view-5 p {
+        font-size: 1.5rem;
+    }
+
+    .leftpart .circle {
+        width: 2%;
+        padding: 1.5rem;
+        height: 6vh;
+    }
+
+    .left1part {
+        display: block;
+    }
+
+    .hide {
+        display: none !important;
+    }
+
+    .leftpart .line1 {
+        width: 0.1vw;
+        height: 25vh;
+    }
+
+    .leftpart .line {
+        width: 0.1vw;
+        height: 45vh;
+    }
+
+    .left1part {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 16rem;
+        margin-right: 1rem;
+    }
+
+    .left1part .box1 {
+        /* margin-bottom: vh; */
+        height: 55vh;
+        width: 40vw;
+        display: flex;
+        padding: 2rem;
+    }
+
+    .left1part .smallbox {
+        width: 5vw;
+        align-self: flex-end;
+    }
+
+    .left1part .para p {
+        font-size: 1.2rem;
+
+    }
+
+    .left1part .box1 .points {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .left1part .point1 i {
+        font-size: 4px;
+    }
+
+    .left1part .point1 p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .rightpart {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 16rem;
+
+
+    }
+
+    .rightpart .box1 {
+
+        height: 55vh;
+        display: flex;
+        padding: 2rem;
+    }
+
+    .rightpart .smallbox {
+        width: 5vw;
+        align-self: flex-end;
+    }
+
+    .para p {
+        font-size: 1.2rem;
+
+    }
+
+    .rightpart .box1 .points {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .point1 i {
+        font-size: 4px;
+    }
+
+    .point1 p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .view-6{
+        margin-top: 20vh;
+    }
+    .view-6 h1{
+        font-size: 6rem;
+    }
+    .view-6 p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .view-6 br{
+        display: block;
+    }
+    .view-7{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        
+        
+    }
+    .view-7 .left1 .box2{
+        width:40vw;
+        height: 60vh;
+    }
+    .view-7 .right1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6vh;
+    }
+    .view-7 .right1 .box2{
+        height:62vh;
+        width:40vw;
+        
+        
+    }
+    .view-8 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        
+        
+        
+    }
+    .text8 p{
+        font-size:8rem;
+        
+        
+    }
+    .view-8 .text8img{
+        width:25%;
+    }
+    
+    
+    
+    .view-8 .text8{
+        display:block;
+        
+    }
+    .ok1{
+        display: flex;
+        align-items: center;
+        justify-content:center !important;
+        width: 100%;
+        
+    }
+    .heading1{
+        width: 50%;
+        
+    }
+    
+    .heading1 p{
+        font-size:2.5rem;
+        
+
+        text-align: center;
+    }
+    .para1{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        width:100%;
+        margin-top: 2vh;
+        
+        margin-left:5rem;
+        
+        
+        
+    }
+    .para1 p{
+        font-size: 1.2rem;
+        
+        
+    }
+    .paraimg{
+        width:9%;
+    }
+    .anime {
+        height: 10vh; /* Increase height for desktop */
+    }
+
+    .marquee-wrapper p {
+        font-size: 1.4rem; /* Increase font size for desktop */
+        padding: 0 2rem; /* Increase padding for desktop */
+    }
+
+    .marquee-wrapper {
+        animation-duration: 15s; /* Slow down the animation for desktop */
+    }
+    
+
+
+
+
+
+}
